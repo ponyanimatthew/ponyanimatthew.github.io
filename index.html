@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matthew Ponyani</title>
+<meta name="description" content="Matthew Ponyani: young web developer, entrepreneur and builder from Malawi.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#articles">Articles</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<header>
+  <div class="brand">Personal Brand Hub</div>
+  <div class="id-row">
+    <img class="photo" src="matthew.jpg" alt="Photo of Matthew Ponyani">
+    <div class="id-text">
+      <h1>Hi, I'm Matthew Ponyani.</h1>
+      <a href="mailto:ponyanimatthew5@gmail.com">ponyanimatthew5@gmail.com</a>
+      <a href="tel:+265985071784">+265 985 071 784</a>
+    </div>
+  </div>
+  <p>I'm an 18-year-old web developer and young entrepreneur. I build websites and apps, and I run my own electronics business, all from my phone.</p>
+  <div class="btns">
+    <a class="btn primary" href="#projects">See my work</a>
+    <a class="btn" href="#contact">Contact me</a>
+  </div>
+</header>
+
+<section id="about">
+  <h2>About me</h2>
+  <p>I'm Matthew, an 18-year-old with an MSCE certificate who teaches himself to code and builds real things with it. I started with HTML, CSS and Python, and I keep taking on bigger projects: websites, a search engine, my own chatbot, and even my own phone interface. I also sell electronics through my business, Matthew Electronics. I'm working towards a future where I earn through freelancing and my own digital products.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="tags">
+    <span class="tag">HTML</span>
+    <span class="tag">CSS</span>
+    <span class="tag">Python</span>
+    <span class="tag">Flask (learning)</span>
+    <span class="tag">JavaScript (learning)</span>
+    <span class="tag">Website design</span>
+    <span class="tag">Building on mobile</span>
+    <span class="tag">Business and sales</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <p class="hint">Tap a project to open its book.</p>
+  <div class="shelf" id="shelf"></div>
+</section>
+
+<section id="resume">
+  <h2>Resume</h2>
+  <div class="timeline">
+    <div class="item">
+      <b>Founder, Matthew Electronics</b>
+      <span>Selling phone and electronics accessories, and building its online catalog.</span>
+    </div>
+    <div class="item">
+      <b>Self-taught Web Developer</b>
+      <span>HTML, CSS, Python. Building websites and apps using only my phone.</span>
+    </div>
+    <div class="item">
+      <b>Freelancer (getting started)</b>
+      <span>Offering web and digital services online.</span>
+    </div>
+    <div class="item">
+      <b>MSCE Certificate</b>
+      <span>Malawi School Certificate of Education.</span>
+    </div>
+  </div>
+</section>
+
+<section id="articles">
+  <h2>Articles</h2>
+  <p>Coming soon. I'll share what I learn about coding, building online and starting a business as a young person.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <ul class="contact-list">
+    <li>Email: <a href="mailto:ponyanimatthew5@gmail.com">ponyanimatthew5@gmail.com</a></li>
+    <li>Phone: <a href="tel:+265985071784">+265 985 071 784</a></li>
+    <li>WhatsApp: <a href="https://wa.me/265985071784">Message me</a></li>
+    <li>Instagram: MATTHEW PONYANI</li>
+    <li>Facebook: MATTHEW PONYANI</li>
+  </ul>
+
+  <form action="mailto:ponyanimatthew5@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your name" required>
+    <input type="email" name="email" placeholder="Your email" required>
+    <textarea name="message" placeholder="Your message" required></textarea>
+    <button type="submit">Send message</button>
+  </form>
+</section>
+
+</div>
+
+<footer>
+  &copy; 2026 Matthew Ponyani
+</footer>
+
+<!-- Open book -->
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-label="Project book">
+  <div class="bookwrap">
+    <div class="open-book" id="openBook">
+      <div class="left">
+        <div>
+          <div class="kicker" id="bKicker"></div>
+          <h3 id="bTitle"></h3>
+          <span class="badge" id="bStatus"></span>
+        </div>
+        <div class="by">by Matthew Ponyani</div>
+      </div>
+      <div class="right" id="bPage"></div>
+    </div>
+    <div class="controls">
+      <button id="close">Close book</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+
+<a class="wa-float" href="https://wa.me/265985071784?text=Hi%20Matthew%2C%20I%20found%20your%20website%20and%20I%27d%20like%20to%20chat." target="_blank" rel="noopener" aria-label="Chat with Matthew on WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true">
+    <path d="M16 3C8.8 3 3 8.2 3 14.7c0 3.2 1.4 6 3.7 8.1L5.5 28.5l6.1-2.6c1.4.4 2.9.6 4.4.6 7.2 0 13-5.2 13-11.8S23.200 3 16 3z" fill="#fff"/>
+    <circle cx="10.500" cy="14.700" r="1.700" fill="#25d366"/>
+    <circle cx="16" cy="14.700" r="1.700" fill="#25d366"/>
+    <circle cx="21.500" cy="14.700" r="1.700" fill="#25d366"/>
+  </svg>
+  <span>Chat on WhatsApp</span>
+</a>
+
+</body>
+</html>
